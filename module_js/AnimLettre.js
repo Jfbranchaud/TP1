@@ -42,10 +42,6 @@ export class AnimLettre {
                 
             }
           
-
-
-	
-	
     }
 
     creerElement(elmParent, balise, contenu, classCSS) {
