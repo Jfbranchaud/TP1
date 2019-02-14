@@ -14,10 +14,9 @@ function animationLettre()
 {
     /* Une fois que l'animation des mots est terminé la fonction animLettre s'exécutera */ 
 	console.log('debut animation lettre')
-	const lesLettres = 'Je suis rouillé en JS'
+	const lesLettres = 'Design et intégration web'
  	let  monAnimLettre = new AnimLettre(lesLettres, elmHeader, finAnim)	
 }
-
 
 function finAnim()
 {

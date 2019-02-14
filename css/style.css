@@ -438,45 +438,9 @@ big {
 
 /*--------------------------------------------------------------
 # Navigation
+--------------------------------------------------------------
+@import "navigation/navigation";  
 --------------------------------------------------------------*/
-/*--------------------------------------------------------------
-## Links
---------------------------------------------------------------*/
-a {
-  color: #7a968d;
-}
-
-a:visited {
-  color: #1d215f;
-}
-
-a:hover, a:focus, a:active {
-  color: #197056;
-}
-
-a:focus {
-  outline: thin dotted;
-}
-
-a:hover, a:active {
-  outline: 0;
-}
-
-/*--------------------------------------------------------------
-## Menus
---------------------------------------------------------------*/
-.menu a {
-  text-decoration: none;
-  color: white;
-  border-bottom: 1px solid white;
-  font-size: 1rem;
-  padding: 0.5rem;
-}
-
-.menu a:first-child {
-  border-top: 1px solid white;
-}
-
 /*--------------------------------------------------------------
 # animation
 --------------------------------------------------------------*/
@@ -677,7 +641,8 @@ a:hover, a:active {
 }
 
 .mot > div {
-  font-size: 9vw;
+  color: black;
+  font-size: 2vw;
   text-shadow: 6px 2px 6px rgba(0, 0, 0, 0.7);
   -webkit-animation: animationLettre 1s both;
           animation: animationLettre 1s both;
@@ -781,7 +746,7 @@ body {
 }
 
 .menu {
-  background-color: coral;
+  background-color: black;
   text-align: center;
   /*Pour cet exemple, on fixe la largeur du menu à 100% ou 100vw*/
   width: 100vw;
@@ -818,20 +783,8 @@ body {
   display: none;
 }
 
-.sidebar {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: sidebar;
-}
-
-.sidebar2 {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
-  grid-area: sidebar2;
-}
-
 .content {
-  -ms-grid-row: 3;
+  -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: content;
 }
@@ -843,13 +796,13 @@ body {
 }
 
 .footer {
-  -ms-grid-row: 5;
+  -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: footer;
 }
 
 .conteneur {
-  background-color: forestgreen;
+  background-color: #FC5C03;
   color: #444;
 }
 
@@ -872,14 +825,14 @@ body {
   display: grid;
   width: 100vw;
   grid-gap: 1em;
-      grid-template-areas: "header" "sidebar" "content" "sidebar2" "footer";
+      grid-template-areas: "header" "content" "footer";
 }
 
 @media only screen and (min-width: 500px) {
   .conteneur {
     -ms-grid-columns: 20% auto;
         grid-template-columns: 20% auto;
-        grid-template-areas: "header   header" "sidebar  content" "sidebar2 sidebar2" "footer   footer";
+        grid-template-areas: "header   header" "content  content" "footer   footer";
     min-width: 500px;
   }
 }
@@ -930,27 +883,45 @@ body {
     grid-gap: 20px;
     -ms-grid-columns: 120px auto 120px;
         grid-template-columns: 120px auto 120px;
-        grid-template-areas: "header  header  header" "sidebar content sidebar2" "footer  footer  footer";
+        grid-template-areas: "header  header  header" "content content content" "footer  footer  footer";
     max-width: 100%;
   }
 }
 
 .box {
-  background-color: yellowgreen;
-  color: black;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background-color: black;
+  color: white;
+  text-align: center;
   border-radius: 5px;
   padding: 10px;
   font-size: 150%;
 }
 
-.header,
-.footer {
-  background-color: #999;
+.ligne {
+  width: 500px;
+  border-bottom: 10px solid #FC5C03;
 }
 
-.sidebar2 {
-  background-color: #ccc;
-  color: #444;
+.header {
+  background-color: #FC5C03;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+}
+
+/*--------------------------------------------------------------
+# global
+--------------------------------------------------------------*/
+/*---------------------------------------------------------------
+
+----------------------------------------------------------------*/
+.header {
+  background-color: #0f0;
 }
 
 /*--------------------------------------------------------------*/

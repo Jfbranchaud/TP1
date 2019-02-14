@@ -70,7 +70,17 @@ export class Introduction {
         console.log(balise)
         let noeud = document.createElement(balise)
         if (contenu != '') {
-            noeud.innerHTML = contenu
+            if (contenu == ' ')
+            {
+               noeud.innerHTML = '&nbsp;'
+            }
+            else
+            {
+                noeud.innerHTML = contenu  
+            }
+            
+
+
         }
         noeud.classList.add(classCSS)
         elmParent.appendChild(noeud)

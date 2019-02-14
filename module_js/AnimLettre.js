@@ -28,7 +28,7 @@ export class AnimLettre {
         /* Création des élément DOM qui seront animés. 
         Les éléments seront intégré dans le conteneur elmParent
         */  
-       const tabCouleur = ['#CC231E', '#235E6F' , '#009900', '#34A65F', '#0F8A5F','#F5624D']
+       
        let i = 0;
         console.log('mot')
         let elmConteneur = this.creerElement(this.elmParent,
@@ -38,8 +38,8 @@ export class AnimLettre {
 
             for (let lettre of lesLettres){
 			let elmLettre = this.creerElement(elmConteneur,'div', lettre, '')
-            elmLettre.style.animationDelay = (i * 0.5) + "s";
-			elmLettre.style.color = tabCouleur[(i++)%6];
+            elmLettre.style.animationDelay = (i++ * 0.5) + "s";
+			/*elmLettre.style.color = tabCouleur[(i++)%6];*/
                 
             }
           
@@ -49,8 +49,16 @@ export class AnimLettre {
         console.log(balise)
         let noeud = document.createElement(balise)
         if (contenu != '') {
-            noeud.innerHTML = contenu
+            if (contenu == ' ')
+            {
+               noeud.innerHTML = '&nbsp;'
+            }
+            else
+            {
+                noeud.innerHTML = contenu  
+            }
         }
+
         if (classCSS != '') {
             noeud.classList.add(classCSS)
         }
