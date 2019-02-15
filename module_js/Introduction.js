@@ -18,8 +18,8 @@ export class Introduction {
         //Récupérer les valeurs passées en paramètre			
         this.titrePrincipal = o.titrePrincipal;
         this.titreSecondaire = o.titreSecondaire
-        this.titreTernaire = o.titreTernaire
-        this.description = o.description
+        /*this.titreTernaire = o.titreTernaire
+        this.description = o.description*/
         this.elmParent = elementParent
         this.integrerIntro()
         this.fonction = fonction
@@ -47,7 +47,7 @@ export class Introduction {
             'rectangle')
 
 
-        let elmTernaire = this.creerElement(elmConteneur,
+        /*let elmTernaire = this.creerElement(elmConteneur,
             'div',
             this.titreTernaire,
             'rectangle')
@@ -55,7 +55,7 @@ export class Introduction {
         let elmDescription = this.creerElement(elmConteneur,
             'div',
             this.description,
-            'rectangle')
+            'rectangle')*/
 
         let elmBouton = this.creerElement(elmConteneur,
             'button',

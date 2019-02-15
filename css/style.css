@@ -563,52 +563,26 @@ big {
   }
 }
 
-@-webkit-keyframes anim3 {
-  from {
-    -webkit-transform: translateX(200%) rotate(-45deg);
-            transform: translateX(200%) rotate(-45deg);
-  }
-  to {
-    -webkit-transform: translateX(0%) rotate(0);
-            transform: translateX(0%) rotate(0);
-  }
-}
+/*@keyframes anim3 {
+    from {
+        transform: translateX(200%) rotate(-45deg);
+    }
 
-@keyframes anim3 {
-  from {
-    -webkit-transform: translateX(200%) rotate(-45deg);
-            transform: translateX(200%) rotate(-45deg);
-  }
-  to {
-    -webkit-transform: translateX(0%) rotate(0);
-            transform: translateX(0%) rotate(0);
-  }
-}
-
-@-webkit-keyframes animGo {
-  from {
-    -webkit-transform: translateY(200vh) rotate(-45deg);
-            transform: translateY(200vh) rotate(-45deg);
-  }
-  50%,
-  to {
-    -webkit-transform: translateY(0%) rotate(0);
-            transform: translateY(0%) rotate(0);
-  }
+    to {
+        transform: translateX(0%) rotate(0);
+    }
 }
 
 @keyframes animGo {
-  from {
-    -webkit-transform: translateY(200vh) rotate(-45deg);
-            transform: translateY(200vh) rotate(-45deg);
-  }
-  50%,
-  to {
-    -webkit-transform: translateY(0%) rotate(0);
-            transform: translateY(0%) rotate(0);
-  }
-}
+    from {
+        transform: translateY(200vh) rotate(-45deg);
+    }
 
+    50%,
+    to {
+        transform: translateY(0%) rotate(0);
+    }
+}*/
 @-webkit-keyframes deplacementContenuIntro {
   from {
     -webkit-transform: translateX(0vw);
@@ -619,7 +593,6 @@ big {
             transform: translateX(-100vw);
   }
 }
-
 @keyframes deplacementContenuIntro {
   from {
     -webkit-transform: translateX(0vw);
@@ -900,11 +873,6 @@ body {
   font-size: 150%;
 }
 
-.ligne {
-  width: 500px;
-  border-bottom: 10px solid #FC5C03;
-}
-
 .header {
   background-color: #FC5C03;
 }
@@ -920,8 +888,12 @@ body {
 /*---------------------------------------------------------------
 
 ----------------------------------------------------------------*/
-.header {
-  background-color: #0f0;
+.ligne {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 500px;
+  border-bottom: 10px solid #FC5C03;
 }
 
 /*--------------------------------------------------------------*/

@@ -3,7 +3,7 @@
 */
 
 export const contenuIntro = {
-	titrePrincipal : "Introduction aux modules",
-	titreSecondaire : "TP1  ",
+	titrePrincipal : "Portfolio",
+	titreSecondaire : "Jean-François Branchaud",
 	
 }
