@@ -91,10 +91,12 @@ body {
 		overflow-y: auto;
 
 		display: grid;
-		width : 100vw;
+		width :100vw;
 		grid-gap: 1em;
 		grid-template-areas:
 			"header"
+			"content"
+			"content"
 			"content"
 			"footer"
 }
@@ -113,7 +115,6 @@ body {
 }
 
 @media only screen and (min-width: 900px) {
-
 	.boutonBurger {
 		display: none
 	}
@@ -178,6 +179,7 @@ body {
 
 
 .header{
+	min-height:20vh; 
 	background-color:#FC5C03;
 	
 }

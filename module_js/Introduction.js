@@ -18,8 +18,6 @@ export class Introduction {
         //Récupérer les valeurs passées en paramètre			
         this.titrePrincipal = o.titrePrincipal;
         this.titreSecondaire = o.titreSecondaire
-        /*this.titreTernaire = o.titreTernaire
-        this.description = o.description*/
         this.elmParent = elementParent
         this.integrerIntro()
         this.fonction = fonction
@@ -45,17 +43,6 @@ export class Introduction {
             'div',
             this.titreSecondaire,
             'rectangle')
-
-
-        /*let elmTernaire = this.creerElement(elmConteneur,
-            'div',
-            this.titreTernaire,
-            'rectangle')
-
-        let elmDescription = this.creerElement(elmConteneur,
-            'div',
-            this.description,
-            'rectangle')*/
 
         let elmBouton = this.creerElement(elmConteneur,
             'button',
@@ -88,7 +75,6 @@ export class Introduction {
     }
 
     terminerIntro(evt) {
-        this.elmParent.firstChild.classList.add('deplacementContenuIntro')
         this.elmParent.firstChild.addEventListener('animationend', this.passerVersAnimationSuivante.bind(this))
     }
 

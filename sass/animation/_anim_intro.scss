@@ -28,30 +28,13 @@
 }
 
 .rectangle:nth-child(1) {
-    background-color: #e54792;
+    background-color:black;
     animation: anim1 0.5s;
 }
 
 .rectangle:nth-child(2) {
-    background-color: #f59723;
+    background-color: black;
     animation: anim2 0.5s 0.5s backwards;
-}
-
-.rectangle:nth-child(3) {
-    background-color: #58b34c;
-    animation: anim3 0.5s 1s backwards;
-}
-
-.rectangle:nth-child(4) {
-    background-color: #006d98;
-    font-size: 1em;
-    /* max-height : 20vh;*/
-
-    animation: animGo 1s 1.5s backwards;
-}
-
-.deplacementContenuIntro {
-    animation: deplacementContenuIntro 1s backwards;
 }
 
 @keyframes anim1 {
@@ -72,38 +55,5 @@
 
     to {
         transform: translateX(0%) rotate(0);
-    }
-}
-
-/*@keyframes anim3 {
-    from {
-        transform: translateX(200%) rotate(-45deg);
-    }
-
-    to {
-        transform: translateX(0%) rotate(0);
-    }
-}
-
-@keyframes animGo {
-    from {
-        transform: translateY(200vh) rotate(-45deg);
-    }
-
-    50%,
-    to {
-        transform: translateY(0%) rotate(0);
-    }
-}*/
-
-@keyframes deplacementContenuIntro { 
-    from {
-        transform: translateX(0vw);
-     
-    }
-
-    to {
-        transform: translateX(-100vw);
-       
     }
 }

@@ -5,8 +5,15 @@ import {AnimLettre} from './AnimLettre.js' //
 
 
 /* l'élement de la page qui contiendra les éléments créés dynamiquement */
-let elmHeader = document.querySelector('.header')
-let intro = new Introduction(contenuIntro, elmHeader, animationLettre)
+let elmPortfolio = document.querySelector('h1')
+let intro = new Introduction(contenuIntro, elmPortfolio, animationLettre)
+
+
+/* l'élement de la page qui contiendra les éléments créés dynamiquement */
+/*let elmNom = document.querySelector('h3')
+let intro = new Introduction(contenuIntro, elmNom, animationLettre)*/
+
+
 
 // debutQuestionnaire()
 
