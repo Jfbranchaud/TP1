@@ -5,6 +5,8 @@
 export const contenuIntro = {
 	titrePrincipal : "Portfolio",
 	titreSecondaire : "Jean-François Branchaud",
+	titreTertiaire : "Copyright 2019",
+	lesLettres : "Design et intégration web",
 	
 }
 

@@ -9,29 +9,11 @@ import {AnimLettre} from './AnimLettre.js' //
 let elmHeader = document.querySelector('header')
 let elmPortfolio = document.querySelector('article')
 let elmNom = document.querySelector('.animation2')
-//let intro = new Introduction('allo', elmHeader,animationLettre)
-let  monAnimLettre = new AnimLettre('allo', elmHeader, finAnim)	
+let elmFooter = document.querySelector('footer')
+let monAnimLettre = new AnimLettre(contenuIntro.lesLettres, elmHeader)	
 let Pf = new Introduction(contenuIntro.titrePrincipal, elmPortfolio)
-let Nom = new Introduction(contenuIntro.titreSecondaire, elmNom, animationLettre)
-
-
-
-
-// debutQuestionnaire()
-
-function animationLettre()
-{
-    /* Une fois que l'animation des mots est terminé la fonction animLettre s'exécutera */ 
-	console.log('debut animation lettre')
-	const lesLettres = 'Design et intégration web'
- 	let  monAnimLettre = new AnimLettre(lesLettres, elmHeader, finAnim)	
-}
-
-function finAnim()
-{
-	console.log('animation terminée')
-}
-
+let Nom = new Introduction(contenuIntro.titreSecondaire, elmNom)
+let footer = new Introduction(contenuIntro.titreTertiaire, elmFooter,)
 
 
 
