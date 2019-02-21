@@ -14,10 +14,10 @@ export class Introduction {
      }}
      */
 
-    constructor(o, elementParent, fonction) {
+    constructor(chaine, elementParent, fonction) {
         //Récupérer les valeurs passées en paramètre			
-        this.titrePrincipal = o.titrePrincipal;
-        this.titreSecondaire = o.titreSecondaire
+        this.titrePrincipal = chaine;
+
         this.elmParent = elementParent
         this.integrerIntro()
         this.fonction = fonction
@@ -39,18 +39,12 @@ export class Introduction {
             this.titrePrincipal,
             'rectangle')
 
-        let elmSecondaire = this.creerElement(elmConteneur,
-            'div',
-            this.titreSecondaire,
-            'rectangle')
+  
 
-        let elmBouton = this.creerElement(elmConteneur,
-            'button',
-            'Commencer',
-            'bouton')
+     
         /* On garde une référence sur la fonction terminerIntro */
-        let refTerminerIntro = this.terminerIntro.bind(this)
-        elmBouton.addEventListener('mousedown', this.terminerIntro.bind(this))
+     //   let refTerminerIntro = this.terminerIntro.bind(this)
+     //   elmBouton.addEventListener('mousedown', this.terminerIntro.bind(this))
     }
 
     creerElement(elmParent, balise, contenu, classCSS) {

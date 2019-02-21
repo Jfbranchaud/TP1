@@ -792,7 +792,7 @@ body {
     border-top: none;
   }
   .conteneur {
-    grid-gap: 20px;
+    grid-gap: 1px;
     -ms-grid-columns: 120px auto 120px;
         grid-template-columns: 120px auto 120px;
         grid-template-areas: "header  header  header" "content content content" "footer  footer  footer";
@@ -822,6 +822,7 @@ body {
 }
 
 .footer {
+  min-height: 50px;
   background-color: black;
   color: white;
 }
