@@ -9,10 +9,8 @@ import {AnimLettre} from './AnimLettre.js' //
 let elmHeader = document.querySelector('header')
 let elmPortfolio = document.querySelector('article')
 let elmNom = document.querySelector('.animation2')
-let elmFooter = document.querySelector('footer')
 let Pf = new Introduction(contenuIntro.titrePrincipal, elmPortfolio)
 let Nom = new Introduction(contenuIntro.titreSecondaire, elmNom)
-let footer = new Introduction(contenuIntro.titreTertiaire, elmFooter)
 let monAnimLettre = new AnimLettre(contenuIntro.lesLettres, elmHeader)	
 
 

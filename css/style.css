@@ -799,9 +799,10 @@ body {
 }
 
 .footer {
-  min-height: 50px;
+  padding-top: 75px;
+  font-size: 0.75em;
   background-color: black;
-  color: white;
+  color: grey;
 }
 
 /*--------------------------------------------------------------
