@@ -10,15 +10,20 @@ let elmHeader = document.querySelector('header')
 let elmPortfolio = document.querySelector('article')
 let elmNom = document.querySelector('.animation2')
 let elmFooter = document.querySelector('footer')
-let monAnimLettre = new AnimLettre(contenuIntro.lesLettres, elmHeader)	
 let Pf = new Introduction(contenuIntro.titrePrincipal, elmPortfolio)
 let Nom = new Introduction(contenuIntro.titreSecondaire, elmNom)
-let footer = new Introduction(contenuIntro.titreTertiaire, elmFooter,)
+let footer = new Introduction(contenuIntro.titreTertiaire, elmFooter)
+let monAnimLettre = new AnimLettre(contenuIntro.lesLettres, elmHeader)	
 
 
 
 
-
+/*function animationLettre()
+{
+    /* Une fois que l'animation des mots est terminé la fonction animLettre s'exécutera */ 
+	//console.log('debut animation lettre')
+	//const lesLettres = 'Je suis rouillé en JS'
+ 	//let  monAnimLettre = new AnimLettre(lesLettres, elmHeader, finAnim)	
 
 
 

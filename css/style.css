@@ -456,6 +456,7 @@ big {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 100vw;
+  height: 15vw;
 }
 
 .rectangle {
@@ -491,57 +492,29 @@ big {
 
 .rectangle:nth-child(1) {
   background-color: black;
-  -webkit-animation: anim1 0.5s;
-          animation: anim1 0.5s;
-}
-
-.rectangle:nth-child(2) {
-  background-color: black;
-  -webkit-animation: anim2 0.5s 0.5s backwards;
-          animation: anim2 0.5s 0.5s backwards;
+  -webkit-animation: anim1 5s;
+          animation: anim1 5s;
 }
 
 @-webkit-keyframes anim1 {
   from {
-    -webkit-transform: translateY(-50vh) rotate(-45deg);
-            transform: translateY(-50vh) rotate(-45deg);
+    -webkit-transform: translatex(-100vh);
+            transform: translatex(-100vh);
   }
   to {
-    -webkit-transform: translateY(0%) rotate(0);
-            transform: translateY(0%) rotate(0);
+    -webkit-transform: translatex(0%);
+            transform: translatex(0%);
   }
 }
 
 @keyframes anim1 {
   from {
-    -webkit-transform: translateY(-50vh) rotate(-45deg);
-            transform: translateY(-50vh) rotate(-45deg);
+    -webkit-transform: translatex(-100vh);
+            transform: translatex(-100vh);
   }
   to {
-    -webkit-transform: translateY(0%) rotate(0);
-            transform: translateY(0%) rotate(0);
-  }
-}
-
-@-webkit-keyframes anim2 {
-  from {
-    -webkit-transform: translateX(-200%) rotate(-45deg);
-            transform: translateX(-200%) rotate(-45deg);
-  }
-  to {
-    -webkit-transform: translateX(0%) rotate(0);
-            transform: translateX(0%) rotate(0);
-  }
-}
-
-@keyframes anim2 {
-  from {
-    -webkit-transform: translateX(-200%) rotate(-45deg);
-            transform: translateX(-200%) rotate(-45deg);
-  }
-  to {
-    -webkit-transform: translateX(0%) rotate(0);
-            transform: translateX(0%) rotate(0);
+    -webkit-transform: translatex(0%);
+            transform: translatex(0%);
   }
 }
 
@@ -559,6 +532,8 @@ big {
   color: black;
   font-size: 2.5vw;
   text-shadow: 6px 2px 6px rgba(0, 0, 0, 0.7);
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
   -webkit-animation: animationLettre 1s both;
           animation: animationLettre 1s both;
 }

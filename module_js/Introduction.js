@@ -7,7 +7,7 @@ export class Introduction {
 
     /**
      * Classe permettant de créer et d'animer une introduction
-     * @param {object} o - contient l'ensemble des mots d'intro
+     * @param {object} chaine - contient l'ensemble des mots d'intro
      * @param {DOMElement} elementParent - Conteneur de l'animation
      * @param {function} fonction - l'adresse de la fonction à exécuter après l'animation
          
@@ -34,10 +34,16 @@ export class Introduction {
             '',
             'introduction')
 
+
+            //for(let i; i < tableau.lenght; i++){
+                
+   // }
         let elmPrincipale = this.creerElement(elmConteneur,
             'div',
             this.titrePrincipal,
             'rectangle')
+            
+
 
   
 
