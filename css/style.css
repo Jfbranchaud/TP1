@@ -636,10 +636,10 @@ body {
 }
 
 .menu {
-  background-color: black;
   text-align: center;
   /*Pour cet exemple, on fixe la largeur du menu à 100% ou 100vw*/
   width: 100vw;
+  padding-right: 50px;
   /*Propriété comme item flex - ne peut rétrécir*/
   -webkit-box-flex: 1;
       -ms-flex: 1 0 100%;
@@ -654,6 +654,12 @@ body {
           flex-direction: column;
   overflow-x: hidden;
   overflow-y: auto;
+  color: grey;
+}
+
+.menu a {
+  color: grey;
+  border: 4px solid white;
 }
 
 #chkBoutonBurger:checked ~ .global {
@@ -759,14 +765,10 @@ body {
         align-self: flex-end;
   }
   .menu a {
-    border: 2px solid white;
     /*Propriété comme item flex - peut s'étirer en largeur*/
     -webkit-box-flex: 1;
         -ms-flex: 1 0 auto;
             flex: 1 0 auto;
-  }
-  .menu a:first-child {
-    border-top: none;
   }
   .conteneur {
     grid-gap: 1px;
