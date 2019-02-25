@@ -1,15 +1,13 @@
 .mot {
     display: flex;
-    
+    animation-delay:10s;
 }
 
 .mot>div {
     padding-top:30px;
-    color:black;
     font-size: 2.5vw;
-    text-shadow: 6px 2px 6px rgba(0, 0, 0, 0.7);
-    animation-delay: 5s;
-    animation: animationLettre 1s both;
+    animation-delay:2s;
+    animation: animationLettre 0.5s both;
    
     
 }
@@ -17,19 +15,25 @@
 @keyframes animationLettre {
     from {
         /* opacity:  0; */
-        transform: translateY(-75vw) rotate(180deg) scale(1);
-        animation-timing-function: cubic-bezier(.8, .01, .97, .19);
+        color:white;
+        transform: translateY(-75vw);
+        animation-timing-function: cubic-bezier(.38,.4,.84,.84);
     }
+        //animation-timing-function: cubic-bezier(.8, .01, .97, .19);
+    
 
     50% {
         /* opacity:  .5; */
-        transform: translateY(30vw) rotate(180deg) scale(1.5);
-        animation-timing-function: cubic-bezier(.09, .25, .19, 1.01);
+        color:gray;
+        transform: translateY(30vw) ;
+        animation-timing-function: cubic-bezier(0,.52,.82,.73);
+        //animation-timing-function: cubic-bezier(.09, .25, .19, 1.01);
     }
 
     to {
         /* opacity:  1; */
-        transform: translateY(0%) rotate(0deg) scale(1);
+        color:black;
+        transform: translateY(0%);
     }
 
 }
