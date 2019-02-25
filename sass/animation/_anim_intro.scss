@@ -30,7 +30,7 @@
 
 .rectangle:nth-child(1) {
     background-color:black;
-    animation: anim1 5s;
+    animation: anim1 2s;
 }
 
 
@@ -41,11 +41,13 @@
 @keyframes anim1 {
     from {
         transform: translatex(-100vh);
+        opacity:0;
 
     }
 
     to {
         transform: translatex(0%);
+        opacity:1; 
     }
 }
 
