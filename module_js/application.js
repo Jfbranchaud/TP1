@@ -16,13 +16,6 @@ let monAnimLettre = new AnimLettre(contenuIntro.lesLettres, elmHeader)
 
 
 
-/*function animationLettre()
-{
-    /* Une fois que l'animation des mots est terminé la fonction animLettre s'exécutera */ 
-	//console.log('debut animation lettre')
-	//const lesLettres = 'Je suis rouillé en JS'
- 	//let  monAnimLettre = new AnimLettre(lesLettres, elmHeader, finAnim)	
-
 
 
 
