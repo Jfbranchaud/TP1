@@ -491,7 +491,7 @@ big {
 }
 
 .rectangle:nth-child(1) {
-  background-color: black;
+  background-color: cadetblue;
   -webkit-animation: anim1 2s;
           animation: anim1 2s;
 }
@@ -708,7 +708,7 @@ body {
 }
 
 .conteneur {
-  background-color: black;
+  background-color: cadetblue;
   color: #444;
 }
 
@@ -731,14 +731,20 @@ body {
   display: grid;
   width: 100vw;
   grid-gap: 1em;
-      grid-template-areas: "header" "content" "content" "content" "footer";
+      grid-template-areas: "header"
+ "content"
+ "content"
+ "content"
+ "footer";
 }
 
 @media only screen and (min-width: 500px) {
   .conteneur {
     -ms-grid-columns: 20% auto;
         grid-template-columns: 20% auto;
-        grid-template-areas: "header   header" "content  content" "footer   footer";
+        grid-template-areas: "header   header"
+ "content  content"
+ "footer   footer";
     min-width: 200px;
   }
 }
@@ -786,7 +792,9 @@ body {
     grid-gap: 1px;
     -ms-grid-columns: 120px auto 120px;
         grid-template-columns: 120px auto 120px;
-        grid-template-areas: "header  header  header" "content content content" "footer  footer  footer";
+        grid-template-areas: "header  header  header"
+ "content content content"
+ "footer  footer  footer";
     max-width: 100%;
   }
 }
@@ -799,7 +807,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: black;
+  background-color: cadetblue;
   color: white;
   text-align: center;
   border-radius: 5px;
@@ -814,7 +822,7 @@ body {
 
 .footer {
   font-size: 0.75em;
-  background-color: black;
+  background-color: cadetblue;
   color: grey;
 }
 
