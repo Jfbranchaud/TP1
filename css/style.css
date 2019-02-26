@@ -648,7 +648,7 @@ body {
 .menu {
   text-align: center;
   /*Pour cet exemple, on fixe la largeur du menu à 100% ou 100vw*/
-  width: 100vw;
+  width: 30vw;
   padding-right: 50px;
   /*Propriété comme item flex - ne peut rétrécir*/
   -webkit-box-flex: 1;
@@ -662,6 +662,8 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-item-align: center;
+      align-self: center;
   overflow-x: hidden;
   overflow-y: auto;
   color: grey;
@@ -737,7 +739,7 @@ body {
     -ms-grid-columns: 20% auto;
         grid-template-columns: 20% auto;
         grid-template-areas: "header   header" "content  content" "footer   footer";
-    min-width: 500px;
+    min-width: 200px;
   }
 }
 
@@ -811,7 +813,6 @@ body {
 }
 
 .footer {
-  padding-top: 75px;
   font-size: 0.75em;
   background-color: black;
   color: grey;

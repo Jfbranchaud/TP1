@@ -36,13 +36,16 @@ body {
 	.menu {
 		text-align: center;
 		/*Pour cet exemple, on fixe la largeur du menu à 100% ou 100vw*/
-		width: 100vw;
+		width: 30vw;
 		padding-right:50px;
 		/*Propriété comme item flex - ne peut rétrécir*/
 		flex: 1 0 100%;
 		/*Contexte flex en colonne pour ses enfants*/
 		display: flex;
 		flex-direction: column;
+		//justify-content: space-between;
+		align-self:center;
+		
 		overflow-x: hidden;
 		overflow-y: auto;
 		color:grey;
@@ -117,9 +120,13 @@ body {
 			"content  content"
 			"footer   footer";
 
-		min-width: 500px;
+		min-width: 200px;
+		
 	}
-}
+
+	
+
+
 
 @media only screen and (min-width: 900px) {
 	.boutonBurger {
@@ -186,7 +193,6 @@ body {
 
 
 .footer {
-	padding-top:75px;
 	font-size:0.75em;
 	background-color: black;
 	color:grey;
